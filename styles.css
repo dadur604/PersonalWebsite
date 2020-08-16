@@ -62,14 +62,6 @@ img.background {
 	object-position: 60% 0px;
 }
 
-.spacer {
-	display: block;
-	float: right;
-	height: 20px;
-	width: 20px;
-	background-color: red;
-}
-
 div.content {
 	position: absolute;
 	right: 40%;
@@ -77,9 +69,36 @@ div.content {
 	background-color: #333333a0;
 	//border: solid #00000080 3px;
 	padding: 2rem;
+	//padding-bottom: 1rem;
 	padding-right: calc(2rem + 30px);
 	box-shadow: -10px -10px 20px 5px #ffffff50,
 				 10px  10px 20px 5px #00000050;
+}
+
+div.links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: stretch;
+	align-items: center;
+	align-content: center;
+	line-height: 1.2rem;
+}
+
+.spacer {
+	height: 10px;
+}
+
+a.link {
+	position: relative;
+	z-index: 1;
+	font-size: .8rem;
+	font-family: 'Signika', sans-serif;
+	color: #00000075;
+	margin: 0px 5px;
+	//margin-right: auto;
+	margin-left: 0px;
+	flex-grow: 1;
+	text-align: center;
 }
 
 .orange {
@@ -87,7 +106,7 @@ div.content {
 }
 
 .cs {
-	color:	#557ef6;
+	color:	#41b9e1;
 }
 
 .ucla {
