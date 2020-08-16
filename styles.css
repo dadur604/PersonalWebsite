@@ -62,14 +62,22 @@ img.background {
 	object-position: 60% 0px;
 }
 
+.spacer {
+	display: block;
+	float: right;
+	height: 20px;
+	width: 20px;
+	background-color: red;
+}
+
 div.content {
 	position: absolute;
-	right: 45vw;
-	top: min(25vh, 20vw);
+	right: 40%;
 	max-width: 35vw;
 	background-color: #333333a0;
 	//border: solid #00000080 3px;
 	padding: 2rem;
+	padding-right: calc(2rem + 30px);
 	box-shadow: -10px -10px 20px 5px #ffffff50,
 				 10px  10px 20px 5px #00000050;
 }
