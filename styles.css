@@ -61,12 +61,20 @@ div.content {
 	right: 40%;
 	max-width: 35vw;
 	background-color: #333333a0;
-	//border: solid #00000080 3px;
 	padding: 2rem;
-	//padding-bottom: 1rem;
 	padding-right: calc(2rem + 30px);
 	box-shadow: -10px -10px 20px 5px #ffffff50,
 				 10px  10px 20px 5px #00000050;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	div.content {
+		top: 30px;
+	}
+	
+	html {
+		font-size: 250%;
+	}
 }
 
 div.links {
@@ -79,7 +87,7 @@ div.links {
 }
 
 .spacer {
-	height: 10px;
+	height: 30px;
 }
 
 a.link {
@@ -87,7 +95,7 @@ a.link {
 	z-index: 1;
 	font-size: .8rem;
 	font-family: 'Signika', sans-serif;
-	color: #00000075;
+	color: #00000090;
 	margin: 0px 5px;
 	//margin-right: auto;
 	margin-left: 0px;
