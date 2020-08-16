@@ -1,0 +1,80 @@
+h1 {
+	font-family: 'Permanent Marker', cursive;
+		font-family: 'Signika', sans-serif;
+
+	//font-size: 2.5rem;
+	font-size: 1.6rem;
+	margin: 10px 0px;
+
+}
+
+h3 {
+	font-family: 'Signika', sans-serif;
+	font-size: 1rem;
+	color: white;
+	margin: 10px 0px;
+}
+
+html {
+	font-size: 62.5%; /* 62.5% of 16px = 10px */
+}
+
+body {
+	margin: 0px;
+	background-color: #f1ecf3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.4em;
+}
+
+div.background {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	position: absolute;
+}	
+
+div.skin {
+	position: absolute;
+	background-color: #f1ecf380;
+}
+
+img.background {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 60% 0px;
+}
+
+div.content {
+	position: absolute;
+	right: 45vw;
+	top: 25vh;
+	max-width: 35vw;
+	background-color: #333333a0;
+	//border: solid #00000080 3px;
+	padding: 2rem;
+	box-shadow: -10px -10px 20px 5px #ffffff50,
+				 10px  10px 20px 5px #00000050;
+}
+
+.orange {
+	color: darkorange;
+}
+
+.cs {
+	color:	#557ef6;
+}
+
+.ucla {
+	color: gold;
+}
+
+.programming {
+	color: #dd3c8c;
+}
+
+.guitar {
+	color: #50df20;
+}
