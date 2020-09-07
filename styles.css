@@ -40,9 +40,10 @@ body {
 
 div.background {
 	width: 100%;
-	height: 100%;
 	margin: 0px;
 	position: absolute;
+	top: 100px;
+	bottom: 100px;
 }	
 
 div.skin {
@@ -59,25 +60,68 @@ img.background {
 
 div.content {
 	position: absolute;
-	right: 40%;
+	left: 100px;
+	top: 100px;
+	bottom: 100px;
 	max-width: 35vw;
 	background-color: #333333a0;
 	padding: 2rem;
 	padding-right: calc(2rem + 30px);
 	box-shadow: -10px -10px 20px 5px #ffffff50,
 				 10px  10px 20px 5px #00000050;
+				 
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+.content-header { grid-area: header; }
+
+.content-content {
+	grid-area: content;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: stretch;
+	align-items: center;
+	align-content: center;
+}
+
+.content-footer {
+	grid-area: footer;
+}
+
+/* @media screen and (max-width: 700px) { */
+	/* html { */
+		/* font-size: 250%; */
+	/* } */
+/* } */
 
 @media screen and (max-aspect-ratio: 1/1) {
-	div.content {
-		top: 30px;
-	}
-}
-
-@media screen and (max-width: 700px) {
-	html {
-		font-size: 250%;
-	}
+  div.content {
+	top: 40%;
+	bottom: 10%;
+    left: 10%;
+	right: 10%;
+	max-width: unset;
+	/*max-height: 35vw;*/
+  }
+  
+  div.background {
+	height: 100%;
+	width: unset;
+	top: unset;
+	bottom: unset;
+	left: 10%;
+	right: 10%;
+  }	
 }
 
 div.links {
@@ -85,7 +129,7 @@ div.links {
 	flex-wrap: wrap;
 	justify-content: stretch;
 	align-items: center;
-	align-content: center;
+	align-content: flex-end;
 	line-height: 1.2rem;
 	margin-right: 20px;
 }
