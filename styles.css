@@ -48,7 +48,7 @@ div.background {
 
 div.skin {
 	position: absolute;
-	background-color: #f1ecf380;
+	background-color: #f1ecf350;
 }
 
 img.background {
@@ -102,12 +102,17 @@ div.content {
 
 @media screen and (max-aspect-ratio: 1/1) {
 	html {
-		font-size: 100%;
+		font-size: 125%;
 	} 
+	
+	.grid-container {
+		grid-template-rows: 0.5fr 2fr 0.5fr;
+	}
 	
   div.content {
 	top: 40%;
-	bottom: 10%;
+	bottom: unset;
+	max-height: 60vh;
     left: 0px;
 	right: 0px;
 	max-width: unset;
