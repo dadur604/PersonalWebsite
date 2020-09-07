@@ -95,6 +95,9 @@ div.content {
 
 .content-footer {
 	grid-area: footer;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
@@ -124,11 +127,10 @@ div.content {
 div.links {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: stretch;
+	justify-content: flex-end;
 	align-items: center;
 	align-content: flex-end;
 	line-height: 1.2rem;
-	margin-right: 20px;
 }
 
 .spacer {
@@ -140,12 +142,18 @@ a.link {
 	z-index: 1;
 	font-size: .8rem;
 	font-family: 'Signika', sans-serif;
-	color: #00000090;
+	color: #ffffff;
 	margin: 0px 5px;
-	//margin-right: auto;
+	margin-right: 0px;
 	margin-left: 0px;
 	flex-grow: 1;
 	text-align: center;
+}
+
+i.link {
+	color: #ffffff;
+	font-size: 1rem;
+	margin: 5px 5px;
 }
 
 .orange {
