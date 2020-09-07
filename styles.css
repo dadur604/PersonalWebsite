@@ -108,8 +108,8 @@ div.content {
   div.content {
 	top: 40%;
 	bottom: 10%;
-    left: 10%;
-	right: 10%;
+    left: 0px;
+	right: 0px;
 	max-width: unset;
 	/*max-height: 35vw;*/
   }
@@ -119,8 +119,8 @@ div.content {
 	width: unset;
 	top: unset;
 	bottom: unset;
-	left: 10%;
-	right: 10%;
+	left: 0px;
+	right: 0px;
   }	
 }
 
