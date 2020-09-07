@@ -66,7 +66,6 @@ div.content {
 	max-width: 35vw;
 	background-color: #333333a0;
 	padding: 2rem;
-	padding-right: calc(2rem + 30px);
 	box-shadow: -10px -10px 20px 5px #ffffff50,
 				 10px  10px 20px 5px #00000050;
 				 
@@ -98,13 +97,11 @@ div.content {
 	grid-area: footer;
 }
 
-/* @media screen and (max-width: 700px) { */
-	/* html { */
-		/* font-size: 250%; */
-	/* } */
-/* } */
-
 @media screen and (max-aspect-ratio: 1/1) {
+	html {
+		font-size: 100%;
+	} 
+	
   div.content {
 	top: 40%;
 	bottom: 10%;
